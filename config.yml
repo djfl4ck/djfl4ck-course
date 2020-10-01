@@ -1,0 +1,16 @@
+title: djfl4ck
+description: canal do YouTube
+template:
+  repo: djfl4ck-template
+  name: djfl4ck
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
